@@ -27,7 +27,6 @@ let gcAutoRemoveEnabled = false;
 let currentCookies = null;
 let reconnectAttempt = 0;
 const signature = `\n                       ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑 ALONE ≛◙ﾆﾆ◙◗◗ ;
-const separator = `\n---😈---😈---😈---😈---😈---😈---`;
 
 // --- UTILITY FUNCTIONS ---
 function emitLog(message, isError = false) {
