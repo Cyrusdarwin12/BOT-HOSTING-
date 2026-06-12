@@ -30,7 +30,10 @@ const signature = `\n                       ─╼≛◉🎲╮👑╭🎲◉≛
 
 // --- UTILITY FUNCTIONS ---
 function emitLog(message, isError = false) {
-  const logMessage = `[${new Date().toISOString()}] ${isError ? '❌ ERROR: ' : '✅ INFO: '}${message}`;
+  const logMessage =
+  "[" + new Date().toISOString() + "] " +
+  (isError ? "❌ ERROR: " : "✅ INFO: ") +
+  message;
   console.log(logMessage);
   io.emit('botlog', logMessage);
 }
