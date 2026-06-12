@@ -26,14 +26,12 @@ let nickRemoveEnabled = false;
 let gcAutoRemoveEnabled = false;
 let currentCookies = null;
 let reconnectAttempt = 0;
-const signature = `\n                       ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑 ALONE ≛◙ﾆﾆ◙◗◗ ;
+const signature = `\n                       ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑 ALONE ≛◙ﾆﾆ◙◗◗`;
+const separator = `\n---😈---😈---😈---😈---😈---😈---`;
 
 // --- UTILITY FUNCTIONS ---
 function emitLog(message, isError = false) {
-  const logMessage =
-  "[" + new Date().toISOString() + "] " +
-  (isError ? "❌ ERROR: " : "✅ INFO: ") +
-  message;
+  const logMessage = `[${new Date().toISOString()}] ${isError ? '❌ ERROR: ' : '✅ INFO: '}${message}`;
   console.log(logMessage);
   io.emit('botlog', logMessage);
 }
